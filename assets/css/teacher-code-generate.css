@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap");
+
+:root {
+  --header-height: 3rem;
+  --hue-color: 274;
+  --first-color: hsl(var(--hue-color), 80%, 55%);
+  --first-color-second: hsl(var(--hue-color), 80%, 55%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --body-color-dark: hsl(var(--hue-color), 28%, 12%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  margin: auto;
+  color: white;
+}
+
+main {
+  max-width: 65%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  background-image: url(lllineeee.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: rgb(170, 170, 170);
+  margin-top: 1rem;
+  max-width: 32rem;
+}
+
+.subtitle2 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(170, 170, 170);
+}
+
+button {
+  background-color: #0070f0;
+  color: white;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 400;
+  width: fit-content;
+  border-radius: 9999px;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+  cursor: pointer;
+  display: flex;
+  gap: 0.75rem;
+  border: none;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+  display: inline;
+}
+
+.right {
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(136, 136, 136, 0.1);
+  border: rgb(0, 0, 0, 1) solid gray;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  padding: 3rem;
+  border-radius: 14px;
+}
+.mail1 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 7px;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  width: 30rem;
+  cursor:text;
+}
+
+.mail {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 7px;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  width: 30rem;
+  cursor: text;
+}
+
+.password {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 7px;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  width: 30rem;
+  cursor: text;
+}
+
+.button {
+  background-color: #0070f0;
+  color: white;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 400;
+  width: fit-content;
+  border-radius: 9999px;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+  cursor: pointer;
+  display: flex;
+  gap: 0.75rem;
+  border: none;
+}
+
+.button:hover {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.button2 {
+  background-color: #202022;
+  color: white;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 400;
+  width: fit-content;
+  border-radius: 9999px;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+  cursor: pointer;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.nvm {
+  display: flex;
+  flex-direction: row;
+}
+
+.mail__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.mail__icon {
+  color: rgb(170, 170, 170);
+  font-size: 2rem;
+  letter-spacing: -0.025em;
+  display: inline;
+}
+
+input {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  color: white;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.forgot {
+  display: flex;
+  flex-direction: row;
+  width: 32rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+}
+
+.forgot__right {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  color: rgb(170, 170, 170);
+  font-size: 0.875rem;
+}
+
+
+
+
+.checkbox-wrapper-13 * {
+  box-sizing: inherit;
+}
+.checkbox-wrapper-13 *:before,
+.checkbox-wrapper-13 *:after {
+  box-sizing: inherit;
+}
+
+.goback {
+  color: rgb(170, 170, 170);
+  background-color: rgb(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+
+  text-align: center;
+  border-radius: 999999px;
+}
+
+.goback:hover {
+  color: red;
+  transition: 0.6s;
+}
+
+.card__border {
+  border: 1px solid rgba(136, 136, 136, 0.1);
+}
+
+.nvm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 32rem;
+}
+
+
+
+.diff3 {
+  background: -webkit-linear-gradient(#ec27f7, #c23ff8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.submit__button{
+  margin-top: 1.75rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+  main{
+    max-width: 90%;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .section{
+    height: fit-content;
+  }
+
+
+
+
+  .right{
+    width: 80%;
+    margin: 0;
+  }
+
+
+  .mail1,
+  .mail,
+  .password{
+    width: fit-content;
+    margin-top: .5rem;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
